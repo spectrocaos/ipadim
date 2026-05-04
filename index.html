@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IPADIN - Instituto Paraense de Direito Imobiliário</title>
+
+    <meta name="description"
+        content="O instituto de referência em direito imobiliário e regularização fundiária do Pará.">
+
+    <script src="assets/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="antialiased overflow-x-hidden selection:bg-gold-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center h-full">
+                <!-- IPADIN Logo text placeholder -->
+                <a href="index.html" class="flex items-center h-full py-2 group">
+                    <img src="assets/imagens/logo-ipadim.png" alt="IPADIN" class="h-12 md:h-16 w-auto object-contain transition-transform group-hover:scale-105">
+                </a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="index.html" class="nav-link text-gold-500">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link">Associe-se</a>
+
+                <a href="associe-se.html" class="btn-premium-outer ml-4">
+                    <span class="btn-premium-inner btn-gold py-3 px-6">
+                        Quero me associar
+                    </span>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center">
+                <button onclick="toggleMenu()" class="text-primary hover:text-gold-500 transition-colors">
+                    <iconify-icon icon="heroicons:bars-3" width="32"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="hidden lg:hidden bg-white border-t border-zinc-100 absolute w-full left-0 top-20 shadow-xl">
+            <div class="flex flex-col px-6 py-6 gap-4">
+                <a href="index.html" class="nav-link text-gold-500">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link">Associe-se</a>
+                <div class="pt-4 mt-2 border-t border-zinc-100">
+                    <a href="associe-se.html" class="btn-premium-outer w-full flex justify-center">
+                        <span class="btn-premium-inner btn-gold py-4 w-full justify-center">
+                            Quero me associar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção 1 — Hero -->
+    <section
+        class="relative min-h-[90vh] flex flex-col justify-center items-center pt-40 md:pt-48 pb-16 bg-white border-b border-zinc-100 overflow-hidden">
+        <!-- Decorator Background -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <img src="assets/imagens/img-2414.webp" alt="Background decorator" class="w-full h-full object-cover opacity-[0.03] mix-blend-luminosity grayscale">
+        </div>
+        
+        <div class="absolute inset-0 bg-gold-600/5 z-0 flex items-center justify-center pointer-events-none">
+            <div class="w-[800px] h-[800px] bg-white/50 rounded-full blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center flex flex-col items-center">
+
+
+            <!-- Título Principal -->
+            <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                Domine o <span class="text-gold-gradient">direito imobiliário</span> e a regularização de imóveis no
+                Pará.
+            </h1>
+
+            <!-- Subtítulo -->
+            <p class="text-zinc-600 font-light text-base md:text-lg max-w-2xl mx-auto mb-12">
+                Inscreva-se abaixo para receber conteúdos exclusivos sobre regularização fundiária, contratos
+                imobiliários e muito mais.
+            </p>
+
+            <!-- Formulário inline -->
+            <form action="#" class="w-full max-w-lg mb-8 relative flex shadow-2xl">
+                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <iconify-icon icon="solar:letter-bold-duotone" class="text-zinc-400" width="20"></iconify-icon>
+                </div>
+                <input type="email" placeholder="Seu melhor e-mail..." required
+                    class="flex-1 w-full pl-12 pr-4 py-4 md:py-5 rounded-l-md bg-white border border-zinc-200 border-r-0 focus:ring-2 focus:ring-[#2C4F5E] outline-none text-sm text-zinc-800 placeholder-zinc-400 font-medium">
+                <button type="submit"
+                    class="shrink-0 bg-[#2C4F5E] hover:bg-[#1a333d] text-white font-bold uppercase tracking-widest text-[10px] md:text-xs px-6 md:px-8 py-4 md:py-5 rounded-r-md transition-all shadow-md">
+                    Quero receber
+                </button>
+            </form>
+
+            <!-- Prova Social -->
+            <div class="flex items-center gap-4 text-zinc-500 text-xs md:text-sm font-medium reveal-on-scroll">
+                <div class="flex -space-x-2">
+                    <img src="assets/imagens/photo-2024-03-07-09-02-19.webp"
+                        alt="User 1" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+                    <img src="assets/imagens/image-1709811822-1.webp"
+                        alt="User 2" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+                    <img src="assets/imagens/img-6816.jpg"
+                        alt="User 3" class="w-8 h-8 rounded-full border-2 border-white object-cover">
+                    <div
+                        class="w-8 h-8 rounded-full border-2 border-white bg-zinc-100 flex items-center justify-center text-[10px] text-zinc-600">
+                        +</div>
+                </div>
+                <span><strong class="text-gold-500">+ de 500 profissionais</strong> já fazem parte do IPADIN</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Ticker Section -->
+    <div class="w-full bg-zinc-50 border-y border-zinc-100 overflow-hidden py-4 md:py-6 relative z-20">
+        <div id="scroll-marquee" class="flex whitespace-nowrap gap-12 text-primary font-sans text-[10px] md:text-[11px] font-bold uppercase tracking-[0.4em] transition-transform duration-100 ease-out will-change-transform">
+            <span class="flex items-center gap-12">
+                Regularização Fundiária <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Direito Imobiliário <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Networking Exclusivo <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Referência no Pará <span class="w-2 h-2 bg-gold-500 rounded-full"></span>
+                Regularização Fundiária <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Direito Imobiliário <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Networking Exclusivo <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Referência no Pará
+            </span>
+            <span class="flex items-center gap-12">
+                Regularização Fundiária <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Direito Imobiliário <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Networking Exclusivo <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Referência no Pará <span class="w-2 h-2 bg-gold-500 rounded-full"></span>
+                Regularização Fundiária <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Direito Imobiliário <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Networking Exclusivo <span class="w-2 h-2 bg-gold-500 rounded-full"></span> 
+                Referência no Pará
+            </span>
+        </div>
+    </div>
+
+    <!-- Seção 2 — Associação IPADIN -->
+    <section class="py-24 bg-zinc-50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="section-tag">Faça parte</span>
+                <h2 class="section-title">Associação IPADIN</h2>
+                <p class="section-description max-w-2xl mx-auto">
+                    Junte-se a uma rede seleta e impulsione sua trajetória com acesso a recursos privilegiados e
+                    networking de alto nível.
+                </p>
+            </div>
+
+            <!-- Banner Container Split -->
+            <div class="relative w-full overflow-hidden rounded-sm shadow-2xl reveal-on-scroll group bg-primary mb-24 border border-white/5">
+                <!-- Blue Image Background on Left -->
+                <div class="absolute left-0 top-0 bottom-0 w-full md:w-[60%] overflow-hidden">
+                    <img src="assets/imagens/IMG_2841.webp" class="w-full h-full object-cover opacity-40 mix-blend-luminosity grayscale group-hover:scale-105 transition-transform duration-[2000ms]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/20"></div>
+                </div>
+                
+                <!-- Content Box aligned Right -->
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-end p-0">
+                    <!-- Diagonal Overlay for Mobile -->
+                    <div class="md:hidden absolute inset-0 bg-white z-0 translate-y-1/2 rotate-3"></div>
+
+                    <div class="w-full md:w-[50%] bg-white p-12 md:p-20 shadow-[-40px_0_80px_rgba(0,0,0,0.3)] relative z-10">
+                        <!-- Decorative Gold Accent -->
+                        <div class="absolute top-0 left-0 w-1 h-32 bg-gold-500 hidden md:block"></div>
+                        
+                        <div class="relative">
+                            <span class="text-gold-500 text-[10px] uppercase font-bold tracking-[0.3em] mb-4 block">Exclusividade IPADIN</span>
+                            <h3 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">Eleve sua <span class="text-gold-gradient italic">autoridade</span> máxima no mercado</h3>
+                            <p class="text-zinc-500 font-light text-sm md:text-base leading-relaxed mb-10">
+                                Tenha acesso exclusivo a modelos de peças, eventos priorizados, grupos de debates avançados e
+                                integre a vitrine de profissionais credenciados da nossa comunidade.
+                            </p>
+                            <a href="associe-se.html" class="btn-premium-outer group/btn">
+                                <span class="btn-premium-inner btn-gold py-4 px-10 flex items-center gap-3">
+                                    Quero me associar
+                                    <iconify-icon icon="heroicons:arrow-right-20-solid" class="group-hover/btn:translate-x-1 transition-transform"></iconify-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Seção 3 — Para quem é -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="section-tag">Para quem é</span>
+                <h2 class="section-title">O IPADIN é para <span class="text-gold-gradient">você</span> que:</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+                <!-- Coluna Esquerda: Imagem -->
+                <div class="lg:w-1/2 relative min-h-[400px] md:min-h-[600px] rounded-sm overflow-hidden shadow-2xl reveal-on-scroll">
+                    <img src="assets/imagens/img-2826.webp" alt="IPADIN Professional" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105">
+                    <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+                    <div class="absolute bottom-10 left-10 right-10 p-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-sm">
+                        <p class="text-white text-lg font-serif italic italic leading-relaxed">"O IPADIN une os maiores especialistas do setor para transformar o mercado imobiliário do Pará através da técnica e do networking."</p>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Cards Verticais -->
+                <div class="lg:w-1/2 flex flex-col gap-6">
+                    <!-- Card 1: Advogado -->
+                    <div class="group relative bg-white p-8 rounded-sm border border-zinc-100 shadow-sm hover:shadow-xl hover:border-gold-500 transition-all duration-500 reveal-on-scroll flex gap-6 items-center">
+                        <div class="w-16 h-16 shrink-0 bg-zinc-50 rounded-full flex items-center justify-center group-hover:bg-gold-500/10 transition-colors">
+                            <iconify-icon icon="solar:diploma-verified-bold-duotone" width="32" class="text-gold-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary mb-1 group-hover:text-gold-500 transition-colors">É Advogado</h3>
+                            <p class="text-zinc-500 text-sm font-light leading-relaxed">Busca aprofundamento prático e teses vencedoras em litígios imobiliários complexos.</p>
+                        </div>
+                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="text-3xl font-serif font-bold text-primary">01</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Corretor -->
+                    <div class="group relative bg-white p-8 rounded-sm border border-zinc-100 shadow-sm hover:shadow-xl hover:border-gold-500 transition-all duration-500 reveal-on-scroll flex gap-6 items-center" style="transition-delay: 100ms;">
+                        <div class="w-16 h-16 shrink-0 bg-zinc-50 rounded-full flex items-center justify-center group-hover:bg-gold-500/10 transition-colors">
+                            <iconify-icon icon="solar:home-smile-bold-duotone" width="32" class="text-gold-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary mb-1 group-hover:text-gold-500 transition-colors">É Corretor</h3>
+                            <p class="text-zinc-500 text-sm font-light leading-relaxed">Precisa garantir a diligência e segurança jurídica em todas as suas transações de alto valor.</p>
+                        </div>
+                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="text-3xl font-serif font-bold text-primary">02</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Arquiteto/Engenheiro -->
+                    <div class="group relative bg-white p-8 rounded-sm border border-zinc-100 shadow-sm hover:shadow-xl hover:border-gold-500 transition-all duration-500 reveal-on-scroll flex gap-6 items-center" style="transition-delay: 200ms;">
+                        <div class="w-16 h-16 shrink-0 bg-zinc-50 rounded-full flex items-center justify-center group-hover:bg-gold-500/10 transition-colors">
+                            <iconify-icon icon="solar:ruler-cross-pen-bold-duotone" width="32" class="text-gold-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary mb-1 group-hover:text-gold-500 transition-colors">É Projetista</h3>
+                            <p class="text-zinc-500 text-sm font-light leading-relaxed">Atua em projetos de parcelamento do solo, loteamentos e desmembramentos rurais e urbanos.</p>
+                        </div>
+                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="text-3xl font-serif font-bold text-primary">03</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Gestor -->
+                    <div class="group relative bg-white p-8 rounded-sm border border-zinc-100 shadow-sm hover:shadow-xl hover:border-gold-500 transition-all duration-500 reveal-on-scroll flex gap-6 items-center" style="transition-delay: 300ms;">
+                        <div class="w-16 h-16 shrink-0 bg-zinc-50 rounded-full flex items-center justify-center group-hover:bg-gold-500/10 transition-colors">
+                            <iconify-icon icon="solar:graph-up-bold-duotone" width="32" class="text-gold-500"></iconify-icon>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-primary mb-1 group-hover:text-gold-500 transition-colors">É Gestor</h3>
+                            <p class="text-zinc-500 text-sm font-light leading-relaxed">Administra carteiras de imóveis e necessita de embasamento legal forte para decisão.</p>
+                        </div>
+                        <div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                            <span class="text-3xl font-serif font-bold text-primary">04</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Seção 4 — Próximos cursos -->
+    <section class="py-24 bg-zinc-50 border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="section-tag">Formação profissional</span>
+                <h2 class="section-title">Próximos cursos</h2>
+                <p class="section-description max-w-2xl mx-auto">
+                    Formação prática e atualizada para profissionais do setor imobiliário paraense.
+                </p>
+            </div>
+
+            <!-- Grid de Cursos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Course 1 -->
+                <div
+                    class="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col group reveal-on-scroll">
+                    <!-- Barra de cor por categoria -->
+                    <div class="h-2 bg-gold-400 w-full"></div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/Gemini_Generated_Image_ucx239ucx239ucx2.webp" alt="Curso 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow relative">
+                        <span class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-3">Regularização
+                            fundiária</span>
+                        <h3 class="text-lg font-bold text-primary mb-4 leading-tight">Imersão em regularização urbana
+                        </h3>
+
+                        <div class="space-y-3 mb-8 text-sm text-zinc-500 flex-grow">
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>15 de junho de 2026</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:clock-circle-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Carga horária: 40h</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:laptop-minimalistic-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Híbrido</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"
+                                    class="text-gold-500 mt-1" width="18"></iconify-icon>
+                                <span class="leading-snug">Público: Advogados e Engenheiros</span>
+                            </p>
+                        </div>
+                        <a href="https://plataforma.ipadin.com.br" target="_blank"
+                            class="w-full bg-primary text-white text-center py-4 rounded font-bold text-[11px] uppercase tracking-widest hover:bg-gold-500 transition-colors mt-auto">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col group reveal-on-scroll"
+                    style="transition-delay: 100ms;">
+                    <div class="h-2 bg-primary w-full"></div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/Gemini_Generated_Image_ysv4l5ysv4l5ysv4.webp" alt="Curso 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow relative">
+                        <span class="text-primary text-[10px] uppercase font-bold tracking-widest mb-3">Direito
+                            Imobiliário</span>
+                        <h3 class="text-lg font-bold text-primary mb-4 leading-tight">Contratos imobiliários blindados
+                        </h3>
+
+                        <div class="space-y-3 mb-8 text-sm text-zinc-500 flex-grow">
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>02 e 03 de outubro, 2026</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:clock-circle-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Carga horária: 20h</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:map-point-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Presencial</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"
+                                    class="text-gold-500 mt-1" width="18"></iconify-icon>
+                                <span class="leading-snug">Público: Corretores e Advogados</span>
+                            </p>
+                        </div>
+                        <a href="https://plataforma.ipadin.com.br" target="_blank"
+                            class="w-full bg-primary text-white text-center py-4 rounded font-bold text-[11px] uppercase tracking-widest hover:bg-gold-500 transition-colors mt-auto">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm hover:shadow-xl hover:border-gold-500/50 transition-all duration-300 flex flex-col group reveal-on-scroll"
+                    style="transition-delay: 200ms;">
+                    <div class="h-2 bg-zinc-400 w-full"></div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/Gemini_Generated_Image_jl3vi0jl3vi0jl3v.webp" alt="Curso 3" class="w-full h-full object-cover grayscale opacity-60">
+                        <div class="absolute inset-0 bg-black/20 flex items-center justify-center backdrop-blur-[2px]">
+                            <span class="bg-black/60 text-white text-[10px] uppercase font-bold tracking-widest px-4 py-2 rounded-full flex items-center gap-2 border border-white/10">
+                                <iconify-icon icon="solar:lock-keyhole-bold-duotone" width="14"></iconify-icon>
+                                Em breve
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow relative opacity-70">
+                        <span class="text-zinc-500 text-[10px] uppercase font-bold tracking-widest mb-3">Due
+                            Diligence</span>
+                        <h3 class="text-lg font-bold text-primary mb-4 leading-tight">Due Diligence aplicada ao mercado
+                        </h3>
+
+                        <div class="space-y-3 mb-8 text-sm text-zinc-500 flex-grow">
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Início: 25 de novembro de 2026</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:clock-circle-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Carga horária: 15h</span>
+                            </p>
+                            <p class="flex items-center gap-3">
+                                <iconify-icon icon="solar:laptop-minimalistic-bold-duotone" class="text-gold-500"
+                                    width="18"></iconify-icon>
+                                <span>Online Ao vivo</span>
+                            </p>
+                            <p class="flex items-start gap-3">
+                                <iconify-icon icon="solar:users-group-two-rounded-bold-duotone"
+                                    class="text-gold-500 mt-1" width="18"></iconify-icon>
+                                <span class="leading-snug">Público: Investidores e Gestores</span>
+                            </p>
+                        </div>
+                        <span
+                            class="w-full bg-zinc-100 text-zinc-400 text-center py-4 rounded font-bold text-[11px] uppercase tracking-widest cursor-not-allowed mt-auto flex items-center justify-center gap-2">
+                            <iconify-icon icon="solar:lock-password-bold-duotone" width="16"></iconify-icon>
+                            Em breve
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Ver todos -->
+            <div class="text-center reveal-on-scroll">
+                <a href="cursos.html" class="btn-premium-outer">
+                    <span class="btn-premium-inner">Ver todos os cursos</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5 — Lista de espera -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 reveal-on-scroll">
+            <div
+                class="bg-zinc-100 rounded-xl p-10 md:p-14 flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-8 border border-zinc-200">
+                <div class="md:w-2/3">
+                    <h3 class="font-serif text-2xl font-bold text-primary mb-3">Lista de espera para novos cursos</h3>
+                    <p class="text-zinc-500 text-sm md:text-base font-light">As vagas se esgotaram? Interessa-se por
+                        outros temas? Garanta prioridade de inscrição entrando na nossa fila exclusiva.</p>
+                </div>
+                <div class="md:w-1/3 flex justify-center md:justify-end">
+                    <a href="https://whatsapp.com/channel" target="_blank"
+                        class="bg-gold-500 text-white font-bold text-[11px] uppercase tracking-widest px-8 py-4 rounded hover:bg-gold-600 transition-colors whitespace-nowrap shadow-xl">
+                        Entrar na lista de espera
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 6 — Blog -->
+    <section class="py-24 bg-zinc-50 border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="section-tag">Conteúdo gratuito</span>
+                <h2 class="section-title">Artigos do blog</h2>
+                <p class="section-description max-w-2xl mx-auto">
+                    Perspectivas recentes, análises jurisprudenciais e insights práticos selecionados por nossos
+                    especialistas.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <article
+                    class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll">
+                    <div class="h-48 overflow-hidden bg-zinc-100 relative">
+                        <img src="assets/imagens/img-2820.webp" alt="Artigo 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-3 block border-b border-zinc-100 pb-2">Regularização
+                            Fundiária</span>
+                        <h3
+                            class="font-bold text-primary text-xl mb-4 line-clamp-2 group-hover:text-gold-500 transition-colors">
+                            Usucapião Extrajudicial: Oportunidades e Riscos</h3>
+                        <a href="eventos.html"
+                            class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest hover:text-gold-500 transition-colors border-t border-zinc-100 pt-4 mt-6">
+                            Continuar lendo
+                            <iconify-icon icon="heroicons:chevron-double-right-solid"></iconify-icon>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article
+                    class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll"
+                    style="transition-delay: 100ms;">
+                    <div class="h-48 overflow-hidden bg-zinc-100 relative">
+                        <img src="assets/imagens/img-2826.webp" alt="Artigo 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-3 block border-b border-zinc-100 pb-2">Mercado
+                            Imobiliário</span>
+                        <h3
+                            class="font-bold text-primary text-xl mb-4 line-clamp-2 group-hover:text-gold-500 transition-colors">
+                            Planejamento Tributário para Incorporadoras em 2025</h3>
+                        <a href="eventos.html"
+                            class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest hover:text-gold-500 transition-colors border-t border-zinc-100 pt-4 mt-6">
+                            Continuar lendo
+                            <iconify-icon icon="heroicons:chevron-double-right-solid"></iconify-icon>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article
+                    class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll"
+                    style="transition-delay: 200ms;">
+                    <div class="h-48 overflow-hidden bg-zinc-100 relative">
+                        <img src="assets/imagens/img-2871.webp" alt="Artigo 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-8">
+                        <span
+                            class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-3 block border-b border-zinc-100 pb-2">Legislação</span>
+                        <h3
+                            class="font-bold text-primary text-xl mb-4 line-clamp-2 group-hover:text-gold-500 transition-colors">
+                            Análise das Novas Normas do PDM em Belém</h3>
+                        <a href="eventos.html"
+                            class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest hover:text-gold-500 transition-colors border-t border-zinc-100 pt-4 mt-6">
+                            Continuar lendo
+                            <iconify-icon icon="heroicons:chevron-double-right-solid"></iconify-icon>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 7 — Sobre o IPADIN -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16 reveal-on-scroll">
+                <!-- Avatar/Logo do instituto -->
+                <div class="md:w-1/3 flex justify-center">
+                    <div
+                        class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-primary flex items-center justify-center p-8 shadow-2xl relative">
+                        <div class="absolute inset-0 border-2 border-gold-500 rounded-full scale-[1.05]"></div>
+                        <!-- Logo Placeholder text format -->
+                        <span class="font-serif text-5xl font-bold tracking-widest text-white">IPADIN</span>
+                    </div>
+                </div>
+
+                <!-- Text Right -->
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="font-serif text-4xl font-bold text-primary mb-6">Olá, somos o <span
+                            class="text-gold-gradient">IPADIN</span></h2>
+                    <p class="text-zinc-600 font-light text-base md:text-lg leading-relaxed mb-8">
+                        Uma instituição dedicada exclusivamente ao fomento técnico, ético e comercial do mercado
+                        imobiliário. Nossa missão é qualificar profissionais através da disseminação aprofundada das
+                        melhores práticas em direito imobiliário e regularização fundiária no estado do Pará, criando a
+                        comunidade de maior impacto e credibilidade da região Norte.
+                    </p>
+
+                    <div class="flex items-center justify-center md:justify-start gap-4">
+                        <a href="#"
+                            class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-primary hover:bg-gold-500 hover:text-white hover:border-gold-500 transition-colors">
+                            <iconify-icon icon="mdi:instagram" width="24"></iconify-icon>
+                        </a>
+                        <a href="#"
+                            class="w-12 h-12 rounded-full border border-zinc-200 flex items-center justify-center text-primary hover:bg-gold-500 hover:text-white hover:border-gold-500 transition-colors">
+                            <iconify-icon icon="mdi:youtube" width="24"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 8 — CTA Final (Identico ao Hero) -->
+    <section class="py-24 bg-white relative overflow-hidden text-left border-t border-zinc-100">
+        <div class="max-w-6xl mx-auto px-6 relative">
+            <div class="absolute left-0 top-0 bottom-0 w-[90%] md:w-[70%] bg-primary overflow-hidden shadow-xl rounded-l-xl">
+                <img src="assets/imagens/IMG_2841.webp" class="w-full h-full object-cover opacity-20 mix-blend-luminosity grayscale">
+            </div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-end py-12 md:py-20 reveal-on-scroll">
+                <div class="w-full md:w-[65%] lg:w-[60%] bg-white p-10 md:p-14 shadow-2xl border border-zinc-100 rounded-sm">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-3">
+                        Receba <span class="text-gold-gradient">poder informacional</span> na sua caixa de entrada
+                    </h2>
+                    <p class="text-gold-500 text-sm font-medium italic mb-8">
+                        Seja notificado em primeira mão sobre a abertura de novas turmas e cursos
+                    </p>
+        
+                    <form action="#" class="w-full relative flex shadow-inner">
+                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                            <iconify-icon icon="solar:letter-bold-duotone" class="text-zinc-400" width="20"></iconify-icon>
+                        </div>
+                        <input type="email" placeholder="Seu e-mail profissional" required
+                            class="flex-1 w-full pl-12 pr-4 py-4 rounded-l-sm bg-zinc-50 border border-zinc-200 border-r-0 focus:ring-2 focus:ring-[#2C4F5E] outline-none text-sm text-zinc-800 placeholder-zinc-400 font-medium">
+                        <button type="submit"
+                            class="shrink-0 bg-[#2C4F5E] hover:bg-[#1a333d] text-white font-bold uppercase tracking-widest text-[10px] md:text-[11px] px-6 py-4 rounded-r-sm transition-all shadow-md">
+                            Quero receber
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                <!-- Col 1: Logo & Sobre -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="flex items-center group mb-6">
+                        <img src="assets/imagens/logo-ipadim-branca.webp" alt="IPADIN" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105">
+                    </a>
+                    <p class="text-zinc-400 text-sm max-w-sm mb-8 leading-relaxed">
+                        Referência em direito imobiliário e regularização fundiária. Formando profissionais de excelência no Pará.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:instagram" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:youtube" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Links Rápidos -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Links rápidos</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Home</a>
+                        <a href="sobre.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Sobre</a>
+                        <a href="cursos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Cursos</a>
+                        <a href="eventos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Eventos e notícias</a>
+                        <a href="associe-se.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Associe-se</a>
+                    </div>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Contato</h4>
+                    <div class="space-y-4 text-zinc-400 text-sm">
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:letter-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>contato@ipadin.com.br</span>
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:phone-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>(91) 90000-0000</span>
+                        </p>
+                        <p class="flex items-start gap-4">
+                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-gold-500 mt-1" width="20"></iconify-icon>
+                            <span class="leading-relaxed">Belém - Pará<br>Brasil</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest font-medium">© 2026 IPADIN – Instituto Paraense de Direito Imobiliário. Todos os direitos reservados.</p>
+                
+                <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all" onclick="window.scrollTo(0,0); return false;">
+                    <iconify-icon icon="heroicons:arrow-up" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-2 group">
+        <!-- Message Balloon -->
+        <div id="whatsapp-balloon"
+            class="hidden bg-white text-primary p-4 rounded-xl shadow-2xl border border-zinc-100 max-w-[240px] mb-2 transform translate-y-4 opacity-0 transition-all duration-500 scale-95 origin-bottom-right">
+            <div class="relative">
+                <p class="text-[12px] font-medium leading-relaxed pr-6">Olá!<br>Tem interesse em se associar ao IPADIN?
+                </p>
+                <button onclick="closeBalloon()" class="absolute -top-1 -right-1 text-zinc-400 hover:text-zinc-600">
+                    <iconify-icon icon="heroicons:x-mark" width="16"></iconify-icon>
+                </button>
+            </div>
+            <div
+                class="absolute -bottom-2 right-6 w-4 h-4 bg-white border-r border-b border-zinc-100 transform rotate-45 shadow-sm">
+            </div>
+        </div>
+
+        <a href="https://wa.me/5591900000000?text=Oi!%20Gostaria%20de%20mais%20informações%20sobre%20a%20associação%20ao%20IPADIN."
+            target="_blank"
+            class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all duration-300">
+            <iconify-icon icon="mdi:whatsapp" width="30" class="text-white"></iconify-icon>
+        </a>
+    </div>
+
+    <script id="top" src="assets/script.js" defer></script>
+</body>
+
+</html>

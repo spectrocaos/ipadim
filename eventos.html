@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Eventos e Notícias - IPADIN</title>
+    
+    <meta name="description"
+        content="Acompanhe a agenda do IPADIN e as últimas novidades do mercado imobiliário paraense.">
+
+    <script src="assets/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="antialiased overflow-x-hidden selection:bg-gold-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center h-full">
+                <a href="index.html" class="flex items-center h-full py-2 group">
+                    <img src="assets/imagens/logo-ipadim.png" alt="IPADIN" class="h-12 md:h-16 w-auto object-contain transition-transform group-hover:scale-105">
+                </a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link text-gold-500">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link">Associe-se</a>
+                
+                <a href="associe-se.html" class="btn-premium-outer ml-4">
+                    <span class="btn-premium-inner btn-gold py-3 px-6">
+                        Quero me associar
+                    </span>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center">
+                <button onclick="toggleMenu()" class="text-primary hover:text-gold-500 transition-colors">
+                    <iconify-icon icon="heroicons:bars-3" width="32"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-zinc-100 absolute w-full left-0 top-20 shadow-xl">
+            <div class="flex flex-col px-6 py-6 gap-4">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link text-gold-500">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link">Associe-se</a>
+                <div class="pt-4 mt-2 border-t border-zinc-100">
+                    <a href="associe-se.html" class="btn-premium-outer w-full flex justify-center">
+                        <span class="btn-premium-inner btn-gold py-4 w-full justify-center">
+                            Quero me associar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Interno -->
+    <section class="relative pt-32 pb-16 bg-primary flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/imagens/img-2423.webp" alt="Eventos" class="w-full h-full object-cover opacity-10 mix-blend-luminosity">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <ul class="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest font-bold text-zinc-400 mb-6">
+                <li><a href="index.html" class="hover:text-gold-500 transition-colors">Home</a></li>
+                <li><iconify-icon icon="heroicons:chevron-right" width="12"></iconify-icon></li>
+                <li class="text-gold-500">Eventos e notícias</li>
+            </ul>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Agenda e atualizações</h1>
+            <p class="text-zinc-300 font-light max-w-2xl mx-auto text-sm md:text-base">
+                Fique por dentro dos encontros exclusivos, simpósios e conteúdos relevantes do setor.
+            </p>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <section class="py-24 bg-zinc-50 border-y border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="section-tag">Agenda</span>
+                <h2 class="section-title">Próximos eventos</h2>
+            </div>
+
+            <!-- Destaque Principal -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl border border-black/5 transition-all duration-300 flex flex-col lg:flex-row relative reveal-on-scroll group">
+                <div class="lg:w-1/2 relative min-h-[300px] overflow-hidden">
+                    <img src="assets/imagens/Gemini_Generated_Image_2zunp72zunp72zun.webp" alt="Happy Hour" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <span class="absolute top-6 left-6 bg-gold-500 text-white text-[10px] uppercase tracking-widest font-bold px-4 py-1.5 rounded-sm shadow-md z-10">Destaque</span>
+                </div>
+                <div class="lg:w-1/2 p-10 lg:p-14 flex flex-col">
+                    <h3 class="font-serif text-2xl font-bold text-primary mb-4">Happy Hour - Conexões Imobiliárias</h3>
+                    <p class="text-zinc-500 font-light leading-relaxed mb-6">
+                        Um encontro descontraído exclusivo para associados focando em networking, troca de experiências e rodadas de negócios.
+                    </p>
+                    <div class="space-y-3 mb-8 text-sm text-zinc-600 font-medium">
+                        <p class="flex items-center gap-3">
+                            <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500" width="18"></iconify-icon>
+                            <span>23 de maio de 2025</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <iconify-icon icon="solar:clock-circle-bold-duotone" class="text-gold-500" width="18"></iconify-icon>
+                            <span>19h00 às 23h00</span>
+                        </p>
+                        <p class="flex items-center gap-3">
+                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-gold-500" width="18"></iconify-icon>
+                            <span>Restaurante Manjar das Garças, Belém</span>
+                        </p>
+                    </div>
+                    <a href="#" class="btn-premium-outer mt-auto w-fit">
+                        <span class="btn-premium-inner">Ver detalhes</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Outros eventos (Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Evento 2 -->
+                <div class="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/Gemini_Generated_Image_jl3vi0jl3vi0jl3v.webp" alt="Evento 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-bold text-lg text-primary">Simpósio Regional de Regularização</h3>
+                            <span class="bg-zinc-100 text-zinc-600 px-2 py-1 text-[10px] uppercase font-bold rounded-sm">Seminário</span>
+                        </div>
+                        <p class="text-zinc-500 font-light text-sm mb-6">Discussão aberta sobre os novos critérios do plano diretor integrado.</p>
+                        <div class="flex justify-between items-end border-t border-zinc-100 pt-6">
+                            <p class="text-xs font-bold text-primary flex items-center gap-2">
+                                <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500" width="16"></iconify-icon>
+                                12 de julho de 2025
+                            </p>
+                            <a href="#" class="text-[10px] uppercase tracking-widest font-bold text-primary hover:text-gold-500 border-b-2 border-transparent hover:border-gold-500 transition-colors">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Evento 3 -->
+                <div class="bg-white border border-black/5 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 reveal-on-scroll group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/Gemini_Generated_Image_ysv4l5ysv4l5ysv4.webp" alt="Evento 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="font-bold text-lg text-primary">Workshop: Tributos na Compra e Venda</h3>
+                            <span class="bg-zinc-100 text-zinc-600 px-2 py-1 text-[10px] uppercase font-bold rounded-sm">Oficina</span>
+                        </div>
+                        <p class="text-zinc-500 font-light text-sm mb-6">Oficina prática dedicada a ITBI, ITCMD e estratégias fiscais lícitas na corretagem.</p>
+                        <div class="flex justify-between items-end border-t border-zinc-100 pt-6">
+                            <p class="text-xs font-bold text-primary flex items-center gap-2">
+                                <iconify-icon icon="solar:calendar-bold-duotone" class="text-gold-500" width="16"></iconify-icon>
+                                04 de setembro de 2025
+                            </p>
+                            <a href="#" class="text-[10px] uppercase tracking-widest font-bold text-primary hover:text-gold-500 border-b-2 border-transparent hover:border-gold-500 transition-colors">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Passados -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-serif text-2xl font-bold text-primary mb-10 border-b border-zinc-100 pb-4">Edições passadas</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal-on-scroll">
+                <!-- Foto 1 -->
+                <div class="group relative overflow-hidden rounded-sm aspect-square bg-zinc-200">
+                    <img src="assets/imagens/evento/032829ac-7b70-4480-971b-4de3d2e651a3.jpg" alt="Evento passado" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white text-xs font-bold">1º Congresso Norte de Direito Imobiliário (2024)</span>
+                    </div>
+                </div>
+                <!-- Foto 2 -->
+                <div class="group relative overflow-hidden rounded-sm aspect-square bg-zinc-200">
+                    <img src="assets/imagens/evento/1d5f19d1-d400-4cdd-8997-5caa5e50838c.jpg" alt="Evento passado" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white text-xs font-bold">Reunião de Posse da Diretoria (2023)</span>
+                    </div>
+                </div>
+                <!-- Foto 3 -->
+                <div class="group relative overflow-hidden rounded-sm aspect-square bg-zinc-200">
+                    <img src="assets/imagens/evento/2380e4a7-3d07-4a5c-a790-fdffd15d4b90.jpg" alt="Evento passado" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white text-xs font-bold">Mesa Redonda: Financiamentos (2023)</span>
+                    </div>
+                </div>
+                <!-- Foto 4 -->
+                <div class="group relative overflow-hidden rounded-sm aspect-square bg-zinc-200">
+                    <img src="assets/imagens/evento/28013b87-868f-4b4b-92d8-a235e08e1995.jpg" alt="Evento passado" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white text-xs font-bold">Oficina Prática de Loteamentos (2022)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog e Notícias -->
+    <section class="py-24 bg-zinc-50 border-t border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="section-tag">Atualizações</span>
+                <h2 class="section-title">Últimas notícias</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Post 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/img-2820.webp" alt="Notícia 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-2 block">Legislação</span>
+                        <h3 class="font-bold text-primary text-lg mb-3 line-clamp-2">Nova lei de zoneamento entra em vigor e afeta projetos em aprovação</h3>
+                        <p class="text-zinc-500 font-light text-sm mb-4 line-clamp-3">A promulgação da nova lei impõe adaptações imediatas. Entenda como isso pode acelerar ou travar o fluxo dos seus projetos vigentes.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-zinc-100">
+                            <span class="text-xs text-zinc-400">20 Abr 2025</span>
+                            <a href="#" class="text-primary hover:text-gold-500 font-bold text-xs uppercase tracking-widest transition-colors">Ler artigo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll" style="transition-delay: 100ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/img-2826.webp" alt="Notícia 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-2 block">Mercado Imobiliário</span>
+                        <h3 class="font-bold text-primary text-lg mb-3 line-clamp-2">O aquecimento do mercado rural e a demanda por segurança jurídica</h3>
+                        <p class="text-zinc-500 font-light text-sm mb-4 line-clamp-3">Muitos investidores estão olhando para as áreas rurais. Discutimos a importância da auditoria e diligence de áreas em expansão no estado.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-zinc-100">
+                            <span class="text-xs text-zinc-400">12 Abr 2025</span>
+                            <a href="#" class="text-primary hover:text-gold-500 font-bold text-xs uppercase tracking-widest transition-colors">Ler artigo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 group reveal-on-scroll" style="transition-delay: 200ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="assets/imagens/img-2871.webp" alt="Notícia 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <span class="absolute top-4 right-4 bg-gold-500 text-white text-[9px] uppercase tracking-widest font-bold px-3 py-1 rounded-sm shadow-md z-10">Blog</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-gold-500 text-[10px] uppercase font-bold tracking-widest mb-2 block">IPADIN em Destaque</span>
+                        <h3 class="font-bold text-primary text-lg mb-3 line-clamp-2">Reunião aberta define pautas do instituto para o semestre</h3>
+                        <p class="text-zinc-500 font-light text-sm mb-4 line-clamp-3">Conselho debateu prioridades em pautas focadas na resolução ágil de inventários extrajudiciais complexos visando venda rápida.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-zinc-100">
+                            <span class="text-xs text-zinc-400">05 Abr 2025</span>
+                            <a href="#" class="text-primary hover:text-gold-500 font-bold text-xs uppercase tracking-widest transition-colors">Ler artigo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- News CTA -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 relative">
+            <div class="absolute left-0 top-0 bottom-0 w-[90%] md:w-[70%] bg-primary overflow-hidden shadow-xl rounded-l-xl">
+                <img src="assets/imagens/IMG_2841.webp" class="w-full h-full object-cover opacity-20 mix-blend-luminosity grayscale">
+            </div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-end py-12 md:py-16 reveal-on-scroll">
+                <div class="w-full md:w-[60%] lg:w-[50%] bg-white p-10 md:p-14 shadow-2xl border border-zinc-100 rounded-sm">
+                    <h2 class="font-serif text-3xl font-bold text-primary mb-3">Mantenha-se informado</h2>
+                    <p class="text-zinc-500 text-sm font-light mb-8">Receba por e-mail as principais atualizações e conteúdos exclusivos do IPADIN.</p>
+                    
+                    <form action="#" class="flex flex-col sm:flex-row gap-2">
+                        <input type="email" placeholder="Seu melhor e-mail..." required 
+                            class="flex-1 px-6 py-4 bg-zinc-50 border border-zinc-200 focus:border-primary outline-none text-sm transition-all rounded-sm">
+                        <button type="submit" class="bg-primary text-white px-8 py-4 font-bold text-[11px] uppercase tracking-widest hover:bg-[#1a333d] transition-all shadow-lg rounded-sm whitespace-nowrap">
+                            Inscrever agora
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Global -->
+    <footer class="py-16 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                <!-- Col 1: Logo & Sobre -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="flex items-center group mb-6">
+                        <img src="assets/imagens/logo-ipadim-branca.webp" alt="IPADIN" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105">
+                    </a>
+                    <p class="text-zinc-400 text-sm max-w-sm mb-8 leading-relaxed">
+                        Referência em direito imobiliário e regularização fundiária. Formando profissionais de excelência no Pará.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:instagram" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:youtube" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Links Rápidos -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Links rápidos</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Home</a>
+                        <a href="sobre.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Sobre</a>
+                        <a href="cursos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Cursos</a>
+                        <a href="eventos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Eventos e notícias</a>
+                        <a href="associe-se.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Associe-se</a>
+                    </div>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Contato</h4>
+                    <div class="space-y-4 text-zinc-400 text-sm">
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:letter-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>contato@ipadin.com.br</span>
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:phone-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>(91) 90000-0000</span>
+                        </p>
+                        <p class="flex items-start gap-4">
+                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-gold-500 mt-1" width="20"></iconify-icon>
+                            <span class="leading-relaxed">Belém - Pará<br>Brasil</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest font-medium">© 2026 IPADIN – Instituto Paraense de Direito Imobiliário. Todos os direitos reservados.</p>
+                <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all" onclick="window.scrollTo(0,0); return false;">
+                    <iconify-icon icon="heroicons:arrow-up" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-2 group">
+        <a href="https://wa.me/5591900000000?text=Oi!%20Gostaria%20de%20mais%20informações%20sobre%20a%20associação%20ao%20IPADIN."
+            target="_blank"
+            class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all duration-300">
+            <iconify-icon icon="mdi:whatsapp" width="30" class="text-white"></iconify-icon>
+        </a>
+    </div>
+
+    <script src="assets/script.js" defer></script>
+</body>
+
+</html>

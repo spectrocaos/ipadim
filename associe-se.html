@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Associe-se - IPADIN</title>
+    
+    <meta name="description"
+        content="Faça parte do IPADIN e conecte-se com os profissionais mais atualizados do setor imobiliário paraense.">
+
+    <script src="assets/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="antialiased overflow-x-hidden selection:bg-gold-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center h-full">
+                <a href="index.html" class="flex items-center h-full py-2 group">
+                    <img src="assets/imagens/logo-ipadim.png" alt="IPADIN" class="h-12 md:h-16 w-auto object-contain transition-transform group-hover:scale-105">
+                </a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link text-gold-500">Associe-se</a>
+                
+                <a href="#planos" class="btn-premium-outer ml-4">
+                    <span class="btn-premium-inner btn-gold py-3 px-6">
+                        Quero me associar
+                    </span>
+                </a>
+            </div>
+
+            <div class="lg:hidden flex items-center">
+                <button onclick="toggleMenu()" class="text-primary hover:text-gold-500 transition-colors">
+                    <iconify-icon icon="heroicons:bars-3" width="32"></iconify-icon>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-zinc-100 absolute w-full left-0 top-20 shadow-xl">
+            <div class="flex flex-col px-6 py-6 gap-4">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="cursos.html" class="nav-link">Cursos</a>
+                <a href="eventos.html" class="nav-link">Eventos e notícias</a>
+                <a href="associe-se.html" class="nav-link text-gold-500">Associe-se</a>
+                <div class="pt-4 mt-2 border-t border-zinc-100">
+                    <a href="#planos" class="btn-premium-outer w-full flex justify-center">
+                        <span class="btn-premium-inner btn-gold py-4 w-full justify-center">
+                            Quero me associar
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Interno -->
+    <section class="relative pt-32 pb-16 bg-primary flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/imagens/img-2826.webp" alt="Associação" class="w-full h-full object-cover opacity-10 mix-blend-luminosity">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <ul class="flex items-center justify-center gap-2 text-[10px] uppercase tracking-widest font-bold text-zinc-400 mb-6">
+                <li><a href="index.html" class="hover:text-gold-500 transition-colors">Home</a></li>
+                <li><iconify-icon icon="heroicons:chevron-right" width="12"></iconify-icon></li>
+                <li class="text-gold-500">Associe-se</li>
+            </ul>
+            <h1 class="font-serif text-4xl md:text-5xl font-bold text-white mb-6">Associe-se ao <span class="text-gold-gradient">IPADIN</span></h1>
+            <p class="text-zinc-300 font-light max-w-2xl mx-auto text-sm md:text-base">
+                Eleve sua carreira integrando o corpo de profissionais mais atualizados do mercado imobiliário paraense.
+            </p>
+        </div>
+    </section>
+
+    <!-- Por que se associar? -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto reveal-on-scroll">
+                <span class="section-tag">Benefícios da associação</span>
+                <h2 class="section-title">Por que se associar?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll">
+                    <iconify-icon icon="solar:diploma-verified-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Cursos com desconto</h3>
+                    <p class="text-zinc-500 text-sm font-light">Garanta acesso aos nossos cursos e imersões com condições e valores exclusivos para associados.</p>
+                </div>
+                
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll" style="transition-delay: 100ms;">
+                    <iconify-icon icon="solar:users-group-two-rounded-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Networking de elite</h3>
+                    <p class="text-zinc-500 text-sm font-light">Conecte-se com advogados, engenheiros e investidores que influenciam o mercado do Pará.</p>
+                </div>
+                
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll" style="transition-delay: 200ms;">
+                    <iconify-icon icon="solar:scale-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Atualização jurídica</h3>
+                    <p class="text-zinc-500 text-sm font-light">Receba alertas sobre novas jurisprudências, leis e provimentos estaduais importantes.</p>
+                </div>
+                
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll" style="transition-delay: 300ms;">
+                    <iconify-icon icon="solar:calendar-star-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Eventos exclusivos</h3>
+                    <p class="text-zinc-500 text-sm font-light">Acesso garantido a simpósios e happy hours dedicados exclusivamente para membros.</p>
+                </div>
+                
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll" style="transition-delay: 400ms;">
+                    <iconify-icon icon="solar:ranking-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Visibilidade profissional</h3>
+                    <p class="text-zinc-500 text-sm font-light">Construa sua autoridade perante o mercado fazendo parte do quadro oficial de uma instituição respeitada.</p>
+                </div>
+                
+                <div class="p-8 border border-zinc-100 rounded-md hover:border-gold-500 transition-colors group reveal-on-scroll" style="transition-delay: 500ms;">
+                    <iconify-icon icon="solar:folder-with-files-bold-duotone" width="40" class="text-gold-500 mb-6"></iconify-icon>
+                    <h3 class="text-lg font-bold text-primary mb-3">Material de apoio</h3>
+                    <p class="text-zinc-500 text-sm font-light">Tenha acesso a uma base de dados com modelos de peças e resumos acadêmicos essenciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos de associação -->
+    <section class="py-24 bg-zinc-50 border-y border-zinc-100 relative" id="planos">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <span class="section-tag">Nossos planos</span>
+                <h2 class="section-title">Escolha o seu plano</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto reveal-on-scroll">
+                
+                <!-- Plano 1 -->
+                <div class="bg-white border border-zinc-200 rounded-lg p-10 shadow-sm hover:shadow-xl hover:border-gold-500 transition-all flex flex-col">
+                    <h3 class="text-xl font-bold text-primary mb-2">Sócio Profissional</h3>
+                    <p class="text-zinc-500 text-[13px] font-light mb-6">Para advogados, corretores, engenheiros e arquitetos.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-serif text-primary">R$ Consultar</span>
+                        <span class="text-zinc-400 text-sm">/ano</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow text-sm text-zinc-600">
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Acesso à plataforma e biblioteca
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Descontos em todos os cursos (até 30%)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Participação em eventos estaduais
+                        </li>
+                        <li class="flex items-center gap-3 text-zinc-400">
+                            <iconify-icon icon="heroicons:x-circle-solid" class="text-zinc-300" width="20"></iconify-icon>
+                            Selo Premium no Guia de Profissionais
+                        </li>
+                    </ul>
+                    <a href="https://plataforma.ipadin.com.br" target="_blank" class="w-full text-center py-4 rounded border border-primary text-primary font-bold text-[11px] uppercase tracking-widest hover:bg-primary hover:text-white transition-colors">Associar-me agora</a>
+                </div>
+
+                <!-- Plano 2 -->
+                <div class="bg-primary border border-gold-500 rounded-lg p-10 shadow-xl flex flex-col relative transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 bg-gold-500 text-white text-[10px] uppercase font-bold tracking-widest px-4 py-1 rounded-bl-lg rounded-tr-lg">Recomendado</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Sócio Corporativo</h3>
+                    <p class="text-zinc-300 text-[13px] font-light mb-6">Para escritórios, incorporadoras e empresas.</p>
+                    <div class="mb-8">
+                        <span class="text-4xl font-serif text-white">R$ Consultar</span>
+                        <span class="text-zinc-400 text-sm">/ano</span>
+                    </div>
+                    <ul class="space-y-4 mb-10 flex-grow text-sm text-zinc-300">
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Acesso para até 5 colaboradores
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Descontos em todos os cursos (até 50%)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Cota VIP em eventos estaduais
+                        </li>
+                        <li class="flex items-center gap-3 text-white">
+                            <iconify-icon icon="heroicons:check-circle-solid" class="text-gold-500" width="20"></iconify-icon>
+                            Selo Premium no Guia de Profissionais
+                        </li>
+                    </ul>
+                    <a href="https://plataforma.ipadin.com.br" target="_blank" class="w-full text-center py-4 rounded bg-gold-500 text-white font-bold text-[11px] uppercase tracking-widest hover:bg-gold-600 transition-colors">Associar-me agora</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="font-serif text-2xl font-bold text-primary mb-12 text-center">O que dizem nossos membros</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="p-10 bg-zinc-50 border border-black/5 rounded-sm relative reveal-on-scroll group">
+                    <div class="mb-6">
+                        <iconify-icon icon="ri:double-quotes-l" class="text-gold-500 opacity-30" width="32"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-600 font-light text-sm italic mb-10 leading-relaxed text-justify">A qualidade do networking no IPADIN transformou a dinâmica do meu escritório. Hoje, resolvo questões de aprovação de loteamentos de forma muito mais rápida devido aos contatos que fiz no instituto.</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/imagens/photo-2024-03-07-09-02-19.webp" alt="Advogado" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="text-sm font-bold text-primary">Roberto Nogueira</h4>
+                            <span class="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Advogado Imobiliarista</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="p-10 bg-zinc-50 border border-black/5 rounded-sm relative reveal-on-scroll group" style="transition-delay: 100ms;">
+                    <div class="mb-6">
+                        <iconify-icon icon="ri:double-quotes-l" class="text-gold-500 opacity-30" width="32"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-600 font-light text-sm italic mb-10 leading-relaxed text-justify">Os cursos são extremamente práticos. Participei de uma imersão de Due Diligence que me ensinou nuances de auditoria que nenhum livro convencional traz. Essencial para quem atua na prática.</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/imagens/image-1709811822-1.webp" alt="Arquiteta" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="text-sm font-bold text-primary">Luciana Faria</h4>
+                            <span class="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Arquiteta e Urbanista</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="p-10 bg-zinc-50 border border-black/5 rounded-sm relative reveal-on-scroll group" style="transition-delay: 200ms;">
+                    <div class="mb-6">
+                        <iconify-icon icon="ri:double-quotes-l" class="text-gold-500 opacity-30" width="32"></iconify-icon>
+                    </div>
+                    <p class="text-zinc-600 font-light text-sm italic mb-10 leading-relaxed text-justify">Acompanhar as mudanças na comarca sempre foi um desafio. Com as atualizações e grupos de estudo do IPADIN, estou sempre um passo à frente nas exigências de registros públicos.</p>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/imagens/img-6816.jpg" alt="Corretor" class="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm">
+                        <div>
+                            <h4 class="text-sm font-bold text-primary">Marcos Silveira</h4>
+                            <span class="text-[10px] text-zinc-500 uppercase font-bold tracking-widest">Corretor de Imóveis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-zinc-50 border-t border-zinc-100" id="faq">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="section-tag">Esclarecimentos rápidos</span>
+                <h2 class="section-title">Perguntas frequentes</h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-white border border-zinc-200 rounded-sm overflow-hidden" open>
+                    <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
+                        <span class="text-base md:text-lg font-bold text-primary group-open:text-gold-500 transition-colors">Como funciona o processo de associação?</span>
+                        <iconify-icon icon="heroicons:plus-small" class="group-open:rotate-45 transition-transform text-gold-500" width="24"></iconify-icon>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-zinc-500 font-light text-sm md:text-base leading-relaxed border-t border-zinc-50 pt-4">
+                        Você deve escolher o plano desejado, clicar em "Associar-me agora" e preencher o cadastro inicial. Nossa secretaria analisará seus dados e aprovará a inscrição, liberando o pagamento correspondente.
+                    </div>
+                </details>
+                
+                <details class="group bg-white border border-zinc-200 rounded-sm overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
+                        <span class="text-base md:text-lg font-bold text-primary group-open:text-gold-500 transition-colors">Quais são as formas de pagamento disponíveis?</span>
+                        <iconify-icon icon="heroicons:plus-small" class="group-open:rotate-45 transition-transform text-gold-500" width="24"></iconify-icon>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-zinc-500 font-light text-sm md:text-base leading-relaxed border-t border-zinc-50 pt-4">
+                        Aceitamos pagamento anual via PIX ou parcelamento em até 12x no cartão de crédito através da nossa plataforma financeira parceira.
+                    </div>
+                </details>
+
+                <details class="group bg-white border border-zinc-200 rounded-sm overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
+                        <span class="text-base md:text-lg font-bold text-primary group-open:text-gold-500 transition-colors">A filiação é restrita apenas a advogados?</span>
+                        <iconify-icon icon="heroicons:plus-small" class="group-open:rotate-45 transition-transform text-gold-500" width="24"></iconify-icon>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-zinc-500 font-light text-sm md:text-base leading-relaxed border-t border-zinc-50 pt-4">
+                        Não. O IPADIN incentiva a multidisciplinaridade urbana. Portanto, arquitetos, engenheiros, corretores e investidores do setor são extremamente bem-vindos.
+                    </div>
+                </details>
+
+                <details class="group bg-white border border-zinc-200 rounded-sm overflow-hidden">
+                    <summary class="flex justify-between items-center p-6 md:p-8 cursor-pointer list-none">
+                        <span class="text-base md:text-lg font-bold text-primary group-open:text-gold-500 transition-colors">Posso cancelar minha anuidade?</span>
+                        <iconify-icon icon="heroicons:plus-small" class="group-open:rotate-45 transition-transform text-gold-500" width="24"></iconify-icon>
+                    </summary>
+                    <div class="px-6 md:px-8 pb-6 md:pb-8 text-zinc-500 font-light text-sm md:text-base leading-relaxed border-t border-zinc-50 pt-4">
+                        O cancelamento pode ser manifestado a qualquer tempo, evitando as cobranças de renovação do ciclo subsequente. Planos já ativados e consumidos seguem a política de reembolso em até 7 dias da aquisição.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Botão Grande -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6 relative">
+            <!-- Blue Image Background -->
+            <div class="absolute left-0 top-0 bottom-0 w-[90%] md:w-[70%] bg-primary overflow-hidden shadow-xl rounded-l-xl">
+                <img src="assets/imagens/IMG_2841.webp" class="w-full h-full object-cover opacity-20 mix-blend-luminosity grayscale">
+            </div>
+            
+            <!-- Content Container -->
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-end py-12 md:py-20 reveal-on-scroll">
+                <!-- White Card aligned to right -->
+                <div class="w-full md:w-[60%] lg:w-[50%] bg-white p-10 md:p-14 shadow-2xl border border-zinc-100 rounded-sm">
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-3">Quero me associar agora</h2>
+                    <p class="text-gold-500 text-sm font-medium italic mb-8">Concluindo seu cadastro na plataforma parceira</p>
+                    <a href="https://plataforma.ipadin.com.br" target="_blank" class="inline-flex items-center gap-2 bg-gold-500 text-white px-8 py-4 font-bold text-[11px] uppercase tracking-widest hover:bg-gold-600 transition-all shadow-lg rounded-sm">
+                        Associar-me agora <iconify-icon icon="heroicons:chevron-right" width="16"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Global -->
+    <footer class="py-16 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
+                <!-- Col 1: Logo & Sobre -->
+                <div class="md:col-span-4">
+                    <a href="index.html" class="flex items-center group mb-6">
+                        <img src="assets/imagens/logo-ipadim-branca.webp" alt="IPADIN" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105">
+                    </a>
+                    <p class="text-zinc-400 text-sm max-w-sm mb-8 leading-relaxed">
+                        Referência em direito imobiliário e regularização fundiária. Formando profissionais de excelência no Pará.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:instagram" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gold-500 hover:bg-gold-500 hover:text-white transition-colors">
+                            <iconify-icon icon="mdi:youtube" width="20"></iconify-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Links Rápidos -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Links rápidos</h4>
+                    <div class="flex flex-col gap-4">
+                        <a href="index.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Home</a>
+                        <a href="sobre.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Sobre</a>
+                        <a href="cursos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Cursos</a>
+                        <a href="eventos.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Eventos e notícias</a>
+                        <a href="associe-se.html" class="text-sm text-zinc-400 hover:text-gold-400 transition-colors w-fit">Associe-se</a>
+                    </div>
+                </div>
+
+                <!-- Col 3: Contato -->
+                <div class="md:col-span-4">
+                    <h4 class="text-white text-xs uppercase tracking-[0.2em] font-bold mb-8 border-b border-white/10 pb-4 inline-block">Contato</h4>
+                    <div class="space-y-4 text-zinc-400 text-sm">
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:letter-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>contato@ipadin.com.br</span>
+                        </p>
+                        <p class="flex items-center gap-4">
+                            <iconify-icon icon="solar:phone-bold-duotone" class="text-gold-500" width="20"></iconify-icon>
+                            <span>(91) 90000-0000</span>
+                        </p>
+                        <p class="flex items-start gap-4">
+                            <iconify-icon icon="solar:map-point-bold-duotone" class="text-gold-500 mt-1" width="20"></iconify-icon>
+                            <span class="leading-relaxed">Belém - Pará<br>Brasil</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                <p class="text-zinc-500 text-[10px] uppercase tracking-widest font-medium">© 2026 IPADIN – Instituto Paraense de Direito Imobiliário. Todos os direitos reservados.</p>
+                <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:bg-gold-500 hover:text-white transition-all" onclick="window.scrollTo(0,0); return false;">
+                    <iconify-icon icon="heroicons:arrow-up" width="16"></iconify-icon>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end gap-2 group">
+        <a href="https://wa.me/5591900000000?text=Oi!%20Gostaria%20de%20mais%20informações%20sobre%20a%20associação%20ao%20IPADIN."
+            target="_blank"
+            class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-110 active:scale-95 transition-all duration-300">
+            <iconify-icon icon="mdi:whatsapp" width="30" class="text-white"></iconify-icon>
+        </a>
+    </div>
+
+    <script src="assets/script.js" defer></script>
+</body>
+
+</html>
